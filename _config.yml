@@ -1,7 +1,7 @@
 # Site title and subtitle
 title: 'MISO'
 subtitle: 'An open-source LIMS for NGS sequencing centres'
-miso_flavour: 'OICR'
+miso_flavour: 'PMGC'
 miso_colour: 'rgb(56,121,59)'
 
 # URL to source code
@@ -9,27 +9,27 @@ codeurl: 'https://github.com/miso-lims/miso-lims'
 
 # Keep as an empty string if served up at the root. If served up at a specific
 # path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project
-baseurl: '/walkthroughs'
+baseurl: '/miso-walkthroughs'
 
 # URL to your MISO instance for the training tutorial
-miso_url: 'http://miso.gsi.oicr.on.ca'
+miso_url: 'https://misodev.pmgenomics.ca'
 
 # Configuration for important site-specific values used in the tutorials. Make
 # sure these match existing items in your MISO instance.
-pipeline: 'Research'
+pipeline: 'Default'
 box_size: '8x12 Storage (scannable)'
-sequencer: 'D00331'
-platform: 'Illumina HiSeq 2500'
+sequencer: 'A00827'
+platform: 'NovaSeq 6000'
 platform_type: 'Illumina'
-reference_genome: 'Human hg19 random'
-scientific_name: 'Homo sapiens'
-detailed_qc_status_good: 'Ready'
-detailed_qc_status_pending: 'Not Ready'
-library_type: 'Paired End'
+reference_genome: 'GRCh38'
+scientific_name: 'Homo Sapiens'
+detailed_qc_status_good: 'Ready to proceed'
+detailed_qc_status_pending: 'Pending: Sample Prep'
+library_type: 'Paired-End Sequencing'
 index_kit: 'Nextera DNA Dual Index'
-flowcell: 'HiSeq PE Flow Cell v4'
-seq_params: 'V4 2×101'
-run_scanner_run: '220120_A00469_0263_AH3YMFDSX3'
+flowcell: 'S4'
+seq_params: '2x151'
+run_scanner_run: '220405_A00827_0544_AHHLY7DSX3'
 lane_qc_bad: 'Failed: Other problem'
 
 # values only affecting plain sample mode
@@ -40,17 +40,17 @@ plain_sample3_alias: 'PROJ_S03_0001'
 plain_sample6_alias: 'PROJ_S06_0001'
 
 # values only affecting detailed sample mode
-identity_class: 'Identity'
+identity_class: 'Customer Submission'
 tissue_class: 'Tissue'
 slide_class: 'Slide'
-stock_class: 'gDNA (stock)'
-aliquot_class: 'gDNA (aliquot)'
-tissue_origin_1: 'Ly (Lymphocyte)'
-tissue_origin_2: 'Br (Breast)'
-tissue_origin_3: 'nn (Unknown)'
-tissue_origin_4: 'Pa (Pancreas)'
-tissue_type_1: 'R (Reference or non-tumour, non-diseased tissue sample)'
-tissue_type_2: 'P (Primary Tumour)'
+stock_class: 'Targeted gDNA'
+aliquot_class: 'Targeted gDNA(aliquot)'
+tissue_origin_1: 'Bl (Blood)'
+tissue_origin_2: 'Lv (Liver)'
+tissue_origin_3: 'Ov (Ovaries)'
+tissue_origin_4: 'Bn (Brain)'
+tissue_type_1: 'PDO (Patient Derived Organoid)'
+tissue_type_2: 'PDX (Patient Derived Xenograft)'
 
 # values for Oxford Nanopore tutorial
 ont_sequencer: 'MN16303'
@@ -61,8 +61,8 @@ ont_seq_params: 'Sequencing Run'
 
 # Configuration for indicating who the MISO administrator is and how to contact
 # them
-miso_admin: 'GSI'
-miso_admin_contact: 'email gsi@oicr.on.ca or file a JIRA ticket in _GSI Common_'
+miso_admin: 'your MISO administrator'
+miso_admin_contact: 'contact your MISO administrator'
 
 #--------------------------------------------------------------------------------
 # Settings for Jekyll - should not need to be modified.
@@ -72,3 +72,4 @@ kramdown        :
   entity_output : as_input # &mdash; is output as &mdash;
   smart_quotes  : [39, 39, 34, 34] # decimal for left/right single/double quotes
 #theme: minima
+
